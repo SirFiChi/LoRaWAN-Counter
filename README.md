@@ -30,6 +30,7 @@ Für einen Prototypen werden folgende Komponenten getestet:
 * https://www.amazon.de/gp/product/B07BDTMZQ6 (Netzteil 5V/3A)
 * https://www.amazon.de/gp/product/B06XWSYRCF (Netzteil 12V/1,25A)
 * https://www.amazon.de/gp/product/B0CYLPM7T7 (Kabeldurchführungen)
+* https://makerworld.com/de/models/74345#profileId-78795 (Gehäuse für den ESP32 zum selbst Drucken)
 
 ---
 ## Software
