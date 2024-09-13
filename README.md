@@ -14,7 +14,7 @@ Der geplante Ablauf des Codes:
 * Abfrage ob Jumper gesetzt sind (für Dividierung z.B. durch zwei, wenn Eingang gleich Ausgan, oder durch vier, wenn die Lichtschranke zu Tief hängt und Beine und nicht Hüften zählt. Ggf. auch einen Verbose Modus für das Display, um z.B. Signalstärke zu messen).
 * Zugriff auf Speicher ob bereits ein Wert gespeichert wurde und zu diesem addieren.
 * Zählen der Auslösungen an der Lichtschranke.
-* Übermitteln der Daten alle X Minuten an das TTN. (Ggf. auch per Jumper anpassbar. Im Fall der MSB ist alle sechs Minuten angedacht.
+* Übermitteln der Daten alle X Minuten an das TTN. (Ggf. auch per Jumper anpassbar. Im Fall der MSB ist alle sechs Minuten angedacht.)
 
 ---
 ## Hardware
@@ -34,6 +34,11 @@ Für einen Prototypen werden folgende Komponenten getestet:
 ---
 ## Software
 * Es wird die Arduino IDE verwendet, um einen einfachen Einstieg zu gewährleisten, um auf mehr Ressourcen zugreifen zu können und um das Projekt möglichst einfach reproduzierbar zu machen.
+
+Tutorials die für dieses Projekt betrachtet wurden
+* https://randomnerdtutorials.com/esp32-save-data-permanently-preferences/ (Speichern der aktuellen Zählungen im Flash Memory des ESP32)
+* https://randomnerdtutorials.com/esp32-data-logging-temperature-to-microsd-card/ (Speichern der aktuellen Zählungen auf MicroSD Karte)
+* https://www.youtube.com/watch?v=AslPFY-UXv4&t=473s (Speichern der aktuellen Zählungen auf einem DS3231 RTC Modul)
 
 ---
 ## Sicherheit
