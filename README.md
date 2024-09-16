@@ -43,6 +43,7 @@ Tutorials die für dieses Projekt betrachtet wurden
 * https://randomnerdtutorials.com/esp32-save-data-permanently-preferences/ (Speichern der aktuellen Zählungen im Flash Memory des ESP32)
 * https://randomnerdtutorials.com/esp32-data-logging-temperature-to-microsd-card/ (Speichern der aktuellen Zählungen auf MicroSD Karte)
 * https://www.youtube.com/watch?v=AslPFY-UXv4&t=473s (Speichern der aktuellen Zählungen auf einem DS3231 RTC Modul)
+* https://edistechlab.com/ds3231-rtc-modul/?v=3a52f3c22ed6 (Das DS3231 RTC Modul)
 
 ---
 ## Sicherheit
