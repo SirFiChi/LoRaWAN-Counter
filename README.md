@@ -37,6 +37,9 @@ Für einen Prototypen werden folgende Komponenten getestet:
 * Es wird die Arduino IDE verwendet, um einen einfachen Einstieg zu gewährleisten, um auf mehr Ressourcen zugreifen zu können und um das Projekt möglichst einfach reproduzierbar zu machen.
 
 Tutorials die für dieses Projekt betrachtet wurden
+* https://esp32io.com/tutorials/esp32-dip-switch?utm_content=cmp-true (Dip-Switch auswerten)
+* https://esp32io.com/tutorials/esp32-button-count-lcd (Button Count)
+* https://resource.heltec.cn/download/WiFi_LoRa_32_V3/HTIT-WB32LA(F)_V3.png (PinOut)
 * https://randomnerdtutorials.com/esp32-save-data-permanently-preferences/ (Speichern der aktuellen Zählungen im Flash Memory des ESP32)
 * https://randomnerdtutorials.com/esp32-data-logging-temperature-to-microsd-card/ (Speichern der aktuellen Zählungen auf MicroSD Karte)
 * https://www.youtube.com/watch?v=AslPFY-UXv4&t=473s (Speichern der aktuellen Zählungen auf einem DS3231 RTC Modul)
