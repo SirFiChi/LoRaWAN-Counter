@@ -1,10 +1,4 @@
 /**
-*
-*  UNGETESTET - DER ESP32 ist gerade nicht zur Hand. Kompilieren war erfolgreich.
-*
-**/
-
-/**
 * Sources:
 * - unknown
 **/
@@ -26,42 +20,39 @@ void setup() {
 
     /* Output auf dem Display */
   display.clear();                                                   // Displayinhalt löschen
-  display.setTextAlignment(TEXT_ALIGN_LEFT);                         // Ausrichtung der Schrift ist links
+  display.setTextAlignment(TEXT_ALIGN_CENTER);                       // Ausrichtung der Schrift ist links
   display.setFont(ArialMT_Plain_24);                                 // Schriftgröße auf 24
-  display.drawString(0, 0, "LoRaWAN-Counter");                       // Gibt "LoRaWAN-Counter" an Koordinate 0,0 aus 
-  display.setFont(ArialMT_Plain_16);                                 // Schriftgröße auf 16
-  display.drawString(0,28, "KULT-BIB-G4");                           // Gibt Text aus
+  display.drawString(63, 0, "LoRaWAN");                              // Gibt "LoRaWAN-Counter" an Koordinate 0,0 aus 
+  display.setFont(ArialMT_Plain_24);                                 // Schriftgröße auf 16
+  display.drawString(63,24, "Counter");                              // Gibt Text aus
   display.setFont(ArialMT_Plain_10);                                 // Schriftgröße auf 10
-  display.setTextAlignment(TEXT_ALIGN_RIGHT);                        // Ausrichtung der Schrift ist rechts
-  display.drawString(0,52, "1/5");                                   // Gibt Text aus
+  display.drawString(63,52, "KULT-BIB-G4");                          // Gibt Text aus
   display.display();                                                 // !!! Dieser Befehl gibt nun tatsächlich die gerade definierten Texte auf dem Display aus
-  delay(1500);                                                       // Warte 1,5 Sekunden bis es weiter geht
+  delay(2500);                                                       // Warte 2,5 Sekunden bis es weiter geht
 
   display.clear();                                                   // Displayinhalt löschen
   display.setTextAlignment(TEXT_ALIGN_LEFT);                         // Ausrichtung der Schrift ist links
   display.setFont(ArialMT_Plain_16);                                 // Schriftgröße auf 16
   display.drawString(0, 0, "Status EEPROM");                         // Gibt "LoRaWAN-Counter" an Koordinate 0,0 aus 
   display.setFont(ArialMT_Plain_10);                                 // Schriftgröße auf 10
-  display.drawString(0,20, "countall:" + countall);                  // Gibt Text und Variable aus
-  display.drawString(0,31, "count1:" + count1);                      // Gibt Text und Variable aus
-  display.drawString(0,42, "count2:" + count2);                      // Gibt Text und Variable aus
-  display.setTextAlignment(TEXT_ALIGN_RIGHT);                        // Ausrichtung der Schrift ist rechts
-  display.drawString(0,52, "2/5");                                   // Gibt Text aus
+  display.drawString(0,20, "countall: " + String(countall));         // Gibt Text und Variable aus
+  display.drawString(0,31, "count1: " + String(count1));             // Gibt Text und Variable aus
+  display.drawString(0,42, "count2: " + String(count2));             // Gibt Text und Variable aus
+  display.drawString(110,52, "2/5");                                 // Gibt Text aus
   display.display();                                                 // !!! Dieser Befehl gibt nun tatsächlich die gerade definierten Texte auf dem Display aus
-  delay(1000);                                                       // Warte 1 Sekunde bis es weiter geht
+  delay(2000);                                                       // Warte 2 Sekunden bis es weiter geht
 
   display.clear();                                                   // Displayinhalt löschen
   display.setTextAlignment(TEXT_ALIGN_LEFT);                         // Ausrichtung der Schrift ist links
   display.setFont(ArialMT_Plain_16);                                 // Schriftgröße auf 16
-  display.drawString(0, 0, "Status RTC-EEPROM");                     // Gibt "LoRaWAN-Counter" an Koordinate 0,0 aus 
+  display.drawString(0, 0, "Status RTC");                            // Gibt "LoRaWAN-Counter" an Koordinate 0,0 aus 
   display.setFont(ArialMT_Plain_10);                                 // Schriftgröße auf 10
-  display.drawString(0,20, "countall:" + countall);                  // Gibt Text und Variable aus
-  display.drawString(0,31, "count1:" + count1);                      // Gibt Text und Variable aus
-  display.drawString(0,42, "count2:" + count2);                      // Gibt Text und Variable aus
-  display.setTextAlignment(TEXT_ALIGN_RIGHT);                        // Ausrichtung der Schrift ist rechts
-  display.drawString(0,52, "3/5");                                   // Gibt Text aus
+  display.drawString(0,20, "countall: " + String(countall));         // Gibt Text und Variable aus
+  display.drawString(0,31, "count1: " + String(count1));             // Gibt Text und Variable aus
+  display.drawString(0,42, "count2: " + String(count2));             // Gibt Text und Variable aus
+  display.drawString(110,52, "3/5");                                 // Gibt Text aus
   display.display();                                                 // !!! Dieser Befehl gibt nun tatsächlich die gerade definierten Texte auf dem Display aus
-  delay(1000);                                                       // Warte 1 Sekunde bis es weiter geht
+  delay(2000);                                                       // Warte 2 Sekunde bis es weiter geht
 
   display.clear();                                                   // Displayinhalt löschen
   display.setTextAlignment(TEXT_ALIGN_LEFT);                         // Ausrichtung der Schrift ist links
@@ -71,10 +62,9 @@ void setup() {
   display.drawString(0,20, "countall: 0");                           // Gibt Text und Variable aus
   display.drawString(0,31, "count1: 0");                             // Gibt Text und Variable aus
   display.drawString(0,42, "count2: 0");                             // Gibt Text und Variable aus
-  display.setTextAlignment(TEXT_ALIGN_RIGHT);                        // Ausrichtung der Schrift ist rechts
-  display.drawString(0,52, "4/5");                                   // Gibt Text aus
+  display.drawString(110,52, "4/5");                                 // Gibt Text aus
   display.display();                                                 // !!! Dieser Befehl gibt nun tatsächlich die gerade definierten Texte auf dem Display aus
-  delay(1000);                                                       // Warte 1 Sekunde bis es weiter geht
+  delay(2000);                                                       // Warte 2 Sekunde bis es weiter geht
 
   display.clear();                                                   // Displayinhalt löschen
   display.setTextAlignment(TEXT_ALIGN_LEFT);                         // Ausrichtung der Schrift ist links
@@ -83,9 +73,8 @@ void setup() {
   display.setFont(ArialMT_Plain_10);                                 // Schriftgröße auf 10
   display.drawString(0,20, "EEPROM");                                // Gibt Text und Variable aus
   display.drawString(0,31, "");                                      // Gibt Text und Variable aus
-  display.drawString(0,42, "Kopiere Wert und starte Zählung");       // Gibt Text und Variable aus
-  display.setTextAlignment(TEXT_ALIGN_RIGHT);                        // Ausrichtung der Schrift ist rechts
-  display.drawString(0,52, "5/5");                                   // Gibt Text aus
+  display.drawString(0,42, "Kopiere Wert und starte");               // Gibt Text und Variable aus
+  display.drawString(110,52, "5/5");                                 // Gibt Text aus
   display.display();                                                 // !!! Dieser Befehl gibt nun tatsächlich die gerade definierten Texte auf dem Display aus
   delay(2000);                                                       // Warte 2 Sekunden bis es weiter geht
 
