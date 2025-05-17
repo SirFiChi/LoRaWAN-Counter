@@ -68,7 +68,7 @@ int DEBUG = 1;                                                      // DEBUG-Mod
 /**/
 /* Definiere und befülle ein paar globale Variablen */
 /**/
-  #inculde "config.h"                                               // !!! Hier werden die individuellen Einstellungen gesetzt !!!
+  #include "config.h"                                               // !!! Hier werden die individuellen Einstellungen gesetzt !!!
   boolean initLoRaWANonce = false;                                  // Hilfsvariable, damit die Initialisierung des Aufbaus zum TTN nur einmal stattfindet
   boolean runLoRaWAN = false;                                       // Hilfsvariable, damit bereits nach dem Einschalten Messdaten gesendet werden, und nicht erst nach Ablauf der Zeit
   unsigned int eeAddress0esp = 0;                                   // Initialisiere die Variable "eeAddress" als int und setze sie auf 0 (für Speicherort 0 im EEPROM)
